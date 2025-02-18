@@ -230,6 +230,38 @@ footer p {
     height: auto;
 }
 
+/* Website Preview Styles */
+section#web-preview {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.web-screengrabs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+    gap: 20px; /* Space between images */
+    justify-items: center; /* Center items within the grid */
+}
+
+.web-screengrabs img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px
+}
+
+.web-screengrabs_single {
+    display: flex;
+    justify-content: center; /* Center the single image */
+    height: 500px; /* Set the height to match the other images */
+}
+
+.web-screengrabs_single img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
 /* Media Query for devices with max width of 768px (tablets and mobile devices) */
 @media screen and (max-width: 768px) {
     nav ul {
